@@ -1,11 +1,11 @@
-### Hi there, I'm Nujoud 👋
+Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
 
-**Biotechnology Student | Bioinformatics & Genomics Enthusiast | Aspiring Researcher**
+### 🧬 Biotechnology Student | Cell & Gene Therapy | Gene Editing, mRNA & Bioinformatics
 
-- 🔬 Interested in: Molecular Biology, Bioinformatics, Genomic Data Analysis
-- 🌱 Currently learning: Python for Biologists & Data Science
-- 🎯 Goal: Seeking research opportunities and scholarships
-- 🌍 From: Sudan
-- 💬 Open to Collaboration in research projects
+- 🔬 **Focused on:** Cell & Gene Therapy, CRISPR Gene Editing, mRNA Therapeutics, Stem Cell Therapy
+- 🌱 **Currently building:** DNA-Tools | Cell & Gene Therapy Toolkit (CRISPR & mRNA analysis with Python)
+- 🎯 **Goal:** MEXT Scholarship Japan 2026 | Stem Cell & Regenerative Medicine Research
+- 🌍 **From:** Sudan → Japan (Future)
+- 📫 **Open to:** Research Collaboration in Cell & Gene Therapy
 
-_Passionate about using technology to solve biological problems._
+**From laptop in Sudan to Cell & Gene Therapy labs in Japan**
