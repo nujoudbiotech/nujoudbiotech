@@ -1,34 +1,30 @@
 <svg width="1280" height="384" viewBox="0 0 1280 384" xmlns="http://www.w3.org/2000/svg">
 <defs>
-  <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#a855f7"/>
-    <stop offset="35%" stop-color="#22d3ee"/>
-    <stop offset="70%" stop-color="#2dd4bf"/>
-    <stop offset="100%" stop-color="#4ade80"/>
-  </linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="6"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e2a4a" stroke-width="0.6" opacity="0.6"/>
-  </pattern>
+  <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a855f7"/><stop offset="50%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0 L0 0 0 36" fill="none" stroke="#1c2d50" stroke-width="0.7" opacity="0.7"/></pattern>
 </defs>
-<rect width="1280" height="384" fill="#0a1020"/>
-<rect width="1280" height="384" fill="url(#grid)"/>
-<g filter="url(#glow)">
-  <path d="M -20 55 C 120 15, 220 95, 350 60 S 580 25, 700 55 S 950 85, 1100 45 S 1300 15, 1400 40" fill="none" stroke="url(#waveGrad)" stroke-width="2.5" opacity="0.9">
-    <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M -20 55 C 120 15, 220 95, 350 60 S 580 25, 700 55 S 950 85, 1100 45 S 1300 15, 1400 40; M -20 50 C 120 85, 220 25, 350 55 S 580 75, 700 45 S 950 35, 1100 65 S 1300 75, 1400 40; M -20 55 C 120 15, 220 95, 350 60 S 580 25, 700 55 S 950 85, 1100 45 S 1300 15, 1400 40"/>
+<rect width="1280" height="384" fill="#0a1020"/><rect width="1280" height="384" fill="url(#grid)"/>
+<g filter="url(#glow)" opacity="0.9">
+  <path d="M-20 42 C 180 18, 260 78, 420 52 S 640 22, 760 46 S 1020 72, 1160 38 S 1300 18, 1410 36" fill="none" stroke="url(#wg)" stroke-width="2.8">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M-20 42 C 180 18, 260 78, 420 52 S 640 22, 760 46 S 1020 72, 1160 38 S 1300 18, 1410 36; M-20 58 C 180 78, 260 28, 420 58 S 640 68, 760 38 S 1020 28, 1160 58 S 1300 68, 1410 36; M-20 42 C 180 18, 260 78, 420 52 S 640 22, 760 46 S 1020 72, 1160 38 S 1300 18, 1410 36"/>
   </path>
 </g>
-<g transform="translate(58,170)">
-  <text x="0" y="0" font-family="monospace" font-size="58" font-weight="800" fill="#2dd4bf">Nujood.biotech</text>
-  <text x="0" y="36" font-family="sans-serif" font-size="22" fill="#7dd3fc">Bioinformatics | Gene Therapy | CRISPR | Python</text>
+<circle r="7" fill="white" filter="url(#glow)"><animateMotion dur="5s" repeatCount="indefinite" path="M-20 42 C 180 18, 260 78, 420 52 S 640 22, 760 46 S 1020 72, 1160 38 S 1300 18, 1410 36"/></circle>
+<g transform="translate(52,195)">
+  <text font-family="monospace" font-size="86" font-weight="800" fill="#2ef2e0" letter-spacing="-3">NJOOD</text>
+  <text y="92" font-family="monospace" font-size="86" font-weight="800" fill="#2ef2e0" letter-spacing="-3">BASHEER</text>
 </g>
-<g transform="translate(1020,192)" filter="url(#glow)">
-  <path d="M -50 -160 Q 50 -80 -50 0 Q 50 80 -50 160" fill="none" stroke="#5eead4" stroke-width="3.5" opacity="0.9"/>
-  <path d="M 50 -160 Q -50 -80 50 0 Q -50 80 50 160" fill="none" stroke="#c4b5fd" stroke-width="3.5" opacity="0.9"/>
-  <g opacity="0.85">
-    <line x1="-42" y1="-120" x2="42" y2="-120" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"><animate attributeName="x1" values="-42;-10;-42" dur="2.5s" repeatCount="indefinite"/><animate attributeName="x2" values="42;10;42" dur="2.5s" repeatCount="indefinite"/></line>
-    <line x1="-48" y1="0" x2="48" y2="0" stroke="white" stroke-width="6" stroke-linecap="round"><animate attributeName="x1" values="-48;15;-48" dur="2.5s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="x2" values="48;-15;48" dur="2.5s" begin="0.9s" repeatCount="indefinite"/></line>
-    <line x1="-42" y1="80" x2="42" y2="80" stroke="#a5b4fc" stroke-width="5" stroke-linecap="round"><animate attributeName="x1" values="-42;-8;-42" dur="2.5s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="x2" values="42;8;42" dur="2.5s" begin="1.5s" repeatCount="indefinite"/></line>
+<g transform="translate(1020,192)">
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    <path d="M -52 -160 Q 52 -80 -52 0 Q 52 80 -52 160" fill="none" stroke="#5eead4" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 52 -160 Q -52 -80 52 0 Q -52 80 52 160" fill="none" stroke="#c4b5fd" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-46" y1="-120" x2="46" y2="-120" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"><animate attributeName="x1" values="-46;-8;-46;8;-46" dur="2s" repeatCount="indefinite"/><animate attributeName="x2" values="46;8;46;-8;46" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.3;0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/></line>
+    <line x1="-50" y1="-60" x2="50" y2="-60" stroke="#e9d5ff" stroke-width="6" stroke-linecap="round"><animate attributeName="x1" values="-50;12;-50;-12;-50" dur="2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="x2" values="50;-12;50;12;50" dur="2s" begin="0.3s" repeatCount="indefinite"/></line>
+    <line x1="-52" y1="0" x2="52" y2="0" stroke="white" stroke-width="7" stroke-linecap="round"><animate attributeName="x1" values="-52;18;-52;-18;-52" dur="2s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="x2" values="52;-18;52;18;52" dur="2s" begin="0.6s" repeatCount="indefinite"/></line>
+    <line x1="-50" y1="60" x2="50" y2="60" stroke="#a5b4fc" stroke-width="6" stroke-linecap="round"><animate attributeName="x1" values="-50;-14;-50;14;-50" dur="2s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="x2" values="50;14;50;-14;50" dur="2s" begin="0.9s" repeatCount="indefinite"/></line>
+    <line x1="-46" y1="120" x2="46" y2="120" stroke="#5eead4" stroke-width="6" stroke-linecap="round"><animate attributeName="x1" values="-46;10;-46;-10;-46" dur="2s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="x2" values="46;-10;46;10;46" dur="2s" begin="1.2s" repeatCount="indefinite"/></line>
   </g>
 </g>
 </svg>
