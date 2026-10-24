@@ -1,4 +1,4 @@
-![Banner](./animated_banner.svg)
+![Banner](https://raw.githubusercontent.com/nujoudbiotech/nujoudbiotech/main/banner2.svg?v=2)
 
 # Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
 ...
