@@ -1,4 +1,4 @@
-  ![Banner](./banner.png)
+![Banner](./banner.png)
 
 # Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
 ...
