@@ -1,4 +1,7 @@
-Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
+![Nujood Banner](./nujood_professional_animated.webp)
+
+# Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
+...
 
 ### 🧬 Biotechnology Student | Cell & Gene Therapy | Gene Editing, mRNA & Bioinformatics
 
