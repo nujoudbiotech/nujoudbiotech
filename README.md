@@ -1,5 +1,6 @@
-![Banner](https://raw.githubusercontent.com/nujoudbiotech/nujoudbiotech/main/banner2.svg?v=2)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nujoudbiotech/nujoudbiotech/main/banner2.svg?v=2" alt="NJOOD BASHEER Banner" width="100%" />
+</p>
 # Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
 ...
 
