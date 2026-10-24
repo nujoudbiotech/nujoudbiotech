@@ -1,4 +1,4 @@
-![Nujood Banner](./banner.webp)
+![Banner](./animated_banner.svg)
 
 # Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
 ...
