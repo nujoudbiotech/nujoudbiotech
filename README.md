@@ -1,4 +1,4 @@
-![NJOOD BASHEER Banner](./banner.svg)
+![NJOOD BASHEER Banner](./banner.png)
 # Hi there, I'm Nujoud 👋 | Future Cell & Gene Therapy Researcher
 ...
 
