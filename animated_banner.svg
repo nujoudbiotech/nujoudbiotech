@@ -1,0 +1,43 @@
+<svg width="1280" height="400" viewBox="0 0 1280 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a1128"/>
+      <stop offset="100%" stop-color="#00a8cc"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- خلفية -->
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  
+  <!-- DNA بسيط متوهج -->
+  <g opacity="0.8">
+    <path d="M 150 40 Q 250 100 150 160 Q 50 220 150 280 Q 250 340 150 400" stroke="#00f5ff" stroke-width="4" fill="none" filter="url(#glow)"/>
+    <path d="M 170 40 Q 70 100 170 160 Q 270 220 170 280 Q 70 340 170 400" stroke="#00f5ff" stroke-width="4" fill="none" filter="url(#glow)"/>
+  </g>
+  
+  <!-- موجة الضوء المتحركة - زي حق Yuliia -->
+  <rect x="-400" y="0" width="350" height="400" fill="url(#wave)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" from="-400 0" to="1680 0" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- موجة تانية -->
+  <rect x="-400" y="0" width="200" height="400" fill="url(#wave)" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" from="-400 0" to="1680 0" dur="2.8s" begin="0.8s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- النص -->
+  <text x="640" y="180" font-family="Arial Black, sans-serif" font-size="110" font-weight="900" fill="white" text-anchor="middle" filter="url(#glow)">Nujood</text>
+  <text x="640" y="230" font-family="Arial, sans-serif" font-size="22" fill="#a0f0ff" text-anchor="middle">Bioinformatics | Python | Gene Data Science | Gene24 Project</text>
+</svg>
