@@ -1,34 +1,50 @@
-<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#050a14"/>
-      <stop offset="60%" stop-color="#0a1a2a"/>
-      <stop offset="100%" stop-color="#0e7490"/>
-    </linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  </defs>
-  <!-- خلفية متموجة زي حقها -->
-  <path d="M0,25 Q640,0 1280,25 L1280,295 Q640,320 0,295 Z" fill="url(#bg)"/>
-  <path d="M0,25 Q640,0 1280,25 L1280,35 Q640,10 0,35 Z" fill="#0891b2" opacity="0.8"/>
-  <path d="M0,295 Q640,320 1280,295 L1280,285 Q640,310 0,285 Z" fill="#0891b2" opacity="0.8"/>
-  
-  <!-- DNA icon متوهج -->
-  <g transform="translate(140,160)" filter="url(#glow)">
-    <g opacity="0.9">
-      <path d="M -30 -90 Q 30 -60 -30 -30 Q 30 0 -30 30 Q 30 60 -30 90" stroke="#60a5fa" stroke-width="2.5" fill="none" stroke-dasharray="4 4">
-        <animate attributeName="stroke-dashoffset" from="0" to="16" dur="2s" repeatCount="indefinite"/>
-      </path>
-      <path d="M 30 -90 Q -30 -60 30 -30 Q -30 0 30 30 Q -30 60 30 90" stroke="#a78bfa" stroke-width="2.5" fill="none" stroke-dasharray="4 4">
-        <animate attributeName="stroke-dashoffset" from="16" to="0" dur="2s" repeatCount="indefinite"/>
-      </path>
-      <circle cx="-30" cy="-90" r="4" fill="#38bdf8"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
-      <circle cx="30" cy="-90" r="4" fill="#a78bfa"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/></circle>
-      <circle cx="0" cy="0" r="3" fill="#fff"/>
-    </g>
+<svg width="1280" height="360" viewBox="0 0 1280 360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#050a14"/>
+    <stop offset="35%" stop-color="#0a1628"/>
+    <stop offset="100%" stop-color="#0e4a5e"/>
+  </linearGradient>
+  <linearGradient id="dnaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#a78bfa"/>
+    <stop offset="50%" stop-color="#60a5fa"/>
+    <stop offset="100%" stop-color="#22d3ee"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+  <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+</defs>
+<rect width="1280" height="360" fill="url(#bgGrad)"/>
+<rect x="0" y="12" width="1280" height="1.5" fill="#22d3ee" opacity="0.7">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+</rect>
+<rect x="-200" y="12" width="200" height="1.5" fill="white" opacity="0.9">
+  <animate attributeName="x" from="-200" to="1480" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="0" y="347" width="1280" height="1.5" fill="#22d3ee" opacity="0.7">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+</rect>
+<g transform="translate(130,180)" filter="url(#glow)">
+  <path d="M -35 -120 Q 35 -80 -35 -40 Q 35 0 -35 40 Q 35 80 -35 120" fill="none" stroke="url(#dnaGrad)" stroke-width="3" stroke-linecap="round" opacity="0.9" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" from="0" to="400" dur="4s" repeatCount="indefinite"/></path>
+  <path d="M 35 -120 Q -35 -80 35 -40 Q -35 0 35 40 Q -35 80 35 120" fill="none" stroke="url(#dnaGrad)" stroke-width="3" stroke-linecap="round" opacity="0.9" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" from="400" to="0" dur="4s" repeatCount="indefinite"/></path>
+  <g>
+    <line x1="-28" y1="-100" x2="28" y2="-100" stroke="#7dd3fc" stroke-width="2.5" opacity="0.8"><animate attributeName="x1" values="-28;-10;-28" dur="2s" repeatCount="indefinite"/><animate attributeName="x2" values="28;10;28" dur="2s" repeatCount="indefinite"/></line>
+    <line x1="-32" y1="-75" x2="32" y2="-75" stroke="#7dd3fc" stroke-width="2.5" opacity="0.8"><animate attributeName="x1" values="-32;-5;-32" dur="2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="x2" values="32;5;32" dur="2s" begin="0.2s" repeatCount="indefinite"/></line>
+    <line x1="-30" y1="-50" x2="30" y2="-50" stroke="#7dd3fc" stroke-width="2.5" opacity="0.8"><animate attributeName="x1" values="-30;0;-30" dur="2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="x2" values="30;0;30" dur="2s" begin="0.4s" repeatCount="indefinite"/></line>
+    <line x1="-32" y1="0" x2="32" y2="0" stroke="#fff" stroke-width="3" opacity="0.9"><animate attributeName="x1" values="-32;20;-32" dur="2s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="x2" values="32;-20;32" dur="2s" begin="0.8s" repeatCount="indefinite"/></line>
+    <line x1="-28" y1="50" x2="28" y2="50" stroke="#7dd3fc" stroke-width="2.5" opacity="0.8"><animate attributeName="x1" values="-28;0;-28" dur="2s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="x2" values="28;0;28" dur="2s" begin="1.2s" repeatCount="indefinite"/></line>
   </g>
-  
-  <text x="300" y="150" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">Nujood</text>
-  <text x="302" y="185" font-family="Inter, sans-serif" font-size="15" fill="#7dd3fc" letter-spacing="0.6">Bioinformatics | Python | Gene Data Science | Gene24 | Future Cell &amp; Gene Therapy</text>
+  <circle cx="0" cy="0" r="6" fill="#fff" opacity="1" filter="url(#strongGlow)"><animate attributeName="r" values="5;7;5" dur="1.2s" repeatCount="indefinite"/></circle>
+</g>
+<g transform="translate(340, 180)">
+  <text x="0" y="0" font-family="'Inter', sans-serif" font-size="92" font-weight="900" fill="white" letter-spacing="-2" filter="url(#strongGlow)" opacity="0">Nujood<animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/></text>
+  <text x="2" y="32" font-family="'Inter', monospace" font-size="15.5" font-weight="500" fill="#5eead4" letter-spacing="0.5" opacity="0">Bioinformatics | Python | Gene Data Science | Gene24 | Future Cell &amp; Gene Therapy<animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze"/></text>
+  <rect x="0" y="42" width="0" height="2" fill="#22d3ee" opacity="0.8" rx="1"><animate attributeName="width" from="0" to="680" dur="1.5s" begin="1.5s" fill="freeze"/></rect>
+</g>
 </svg>
-
 
